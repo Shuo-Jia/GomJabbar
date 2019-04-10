@@ -73,7 +73,8 @@ public class GomJabbarServer {
   }
 
   private URL resolveConfigFileUrl() {
-    final String configFileUrl = System.getProperty("com.outbrain.gomjabbar.configFileUrl");
+    //final String configFileUrl = System.getProperty("com.outbrain.gomjabbar.configFileUrl");
+    final String configFileUrl = "file:./config-template.yaml";
     try {
       return new URL(configFileUrl);
     } catch (MalformedURLException e) {
